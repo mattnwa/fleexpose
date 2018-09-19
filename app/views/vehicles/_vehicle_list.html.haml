@@ -1,0 +1,25 @@
+.text-center= "#{pluralize(@vehicles.count, 'vehicle')} were found"
+%br
+.container
+  .row.justify-content-center
+    - @vehicles.each do |v|
+      .col-md-4
+        .card.m-4
+          .card-img-top.img-fluid
+            = image(v)
+          .card-body
+            %h5.card-title= v['name']
+            .card-text
+              %span.text-muted VIN:
+              = v['vin']
+            .card-text{ data: { toggle: 'tooltip', placement: 'left'}, title: "Last Updated: #{v['updated_at']}" }
+              %span.text-muted ODO:
+              = number_with_delimiter v['current_meter_value']
+              mi
+            .card-text
+              %span.text-muted Year
+              = v['year']
+          .card-footer
+            = button_to 'Save', vehicles_path(vehicle: v), method: :post, class: 'btn btn-block btn-success', data: { disable_with: 'Saving!' }
+            -# = link_to 'Save', vehicles_path(vehicle: v), method: :post, class: 'btn btn-block btn-success'
+
