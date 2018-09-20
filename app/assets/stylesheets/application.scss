@@ -1,2 +1,7 @@
 @import 'bootstrap';
 @import 'vehicles';
+
+body {
+  color: white;
+  background: url(asset_path("Moor.jpg"));
+}
