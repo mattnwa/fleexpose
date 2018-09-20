@@ -1,10 +1,10 @@
 .container
-  .col-xl-8.mx-auto
-    %h1.text-center VIN Search
-    = form_tag search_vehicles_path, method: :get, remote: true, class: 'form-inline justify-content-center' do
-      .form-group
-        = text_field_tag :vin, '', placeholder: 'Enter VIN', class: 'form-control input-lg mr-sm-2'
-        = submit_tag "Search", class: 'btn btn-primary', data: { disable_with: 'Finding Matches'}
-  #search-results
+  %h1.text-center FLEETIO VIN TOOL
+  = form_tag search_vehicles_path, method: :get, remote: true, class: 'form-inline justify-content-center mb-2' do
+    .form-group
+      = text_field_tag :vin, '', placeholder: 'Enter part of VIN', class: 'form-control input-lg mr-sm-2'
+      = submit_tag "Search", class: 'btn btn-primary', data: { disable_with: 'Finding Matches'}
+  = render partial: 'partials/vehicles_table'
+#vehicles-search
 
 

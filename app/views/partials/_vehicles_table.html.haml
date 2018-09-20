@@ -1,0 +1,12 @@
+%table.table.table-bordered.table-striped#vehicles-table
+  %thead
+    %tr
+      Current Fleet
+    %tr
+      %th Make
+      %th Model
+      %th Year
+      %th VIN
+      %th Color
+  %tbody#vehicles-table-body
+    = render @vehicles

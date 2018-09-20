@@ -1,6 +1,7 @@
 class VehiclesController < ApplicationController
   # expose(:vehicles) { Vehicle.all }
   def index
+    @vehicles = Vehicle.all
   end
 
   def search
@@ -10,4 +11,16 @@ class VehiclesController < ApplicationController
     end
   end
 
+  def create
+    @vehicle = Vehicle.create(vehicle_params)
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  private
+
+  def vehicle_params
+    params.require(:vehicle).permit(:vin, :make, :model, :year, :vehicle_type_name, :color, :current_meter_value)
+  end
 end

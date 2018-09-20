@@ -11,6 +11,17 @@
     object-fit: cover;
     height: 200px;
   }
-    height: 10vw;
     width: 100%;
+}
+
+#vehicles-table thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+}
+#vehicles-table tbody {
+  display: block;
+  max-height: 200px;
+  overflow-y: scroll;
 }
