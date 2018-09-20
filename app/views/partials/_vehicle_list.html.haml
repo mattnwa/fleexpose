@@ -1,22 +1,22 @@
 #vehicles-list.container
-  .text-center= "#{pluralize(@vehicles.count, 'vehicle')} were found"
+  .text-center= "#{pluralize(@vehicles.count, 'vehicle')} found"
   .row.justify-content-center
     - @vehicles.each do |v|
       .col-md-4
         .card.m-4.bg-dark
-          .card-img-top.img-fluid
+          .card-img-top
             = image(v['default_image_url_large'])
           .card-body
             %h5.card-title.text-center= v['name']
             .card-text
-              %span.text-muted VIN:
+              %span VIN:
               = v['vin']
             .card-text{ data: { toggle: 'tooltip', placement: 'left'}, title: "Last Updated: #{v['updated_at']}" }
-              %span.text-muted ODO:
+              %span ODO:
               = number_with_delimiter v['current_meter_value'].to_i
               mi
             .card-text
-              %span.text-muted Year
+              %span Year
               = v['year']
           .card-footer
             = button_to 'Save', vehicles_path(vehicle: v), remote: true, class: 'btn btn-block btn-success', data: { disable_with: 'Saving!' }

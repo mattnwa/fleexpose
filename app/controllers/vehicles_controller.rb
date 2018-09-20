@@ -1,5 +1,4 @@
 class VehiclesController < ApplicationController
-  # expose(:vehicles) { Vehicle.all }
   def index
     @vehicles = Vehicle.all
   end

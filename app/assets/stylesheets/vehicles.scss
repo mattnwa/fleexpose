@@ -4,12 +4,13 @@
 .card {
   border-radius:10px;
   transition:0.5s;
-  height: 27rem;
+  height: 430px;
 }
 .card-img-top {
   img {
     object-fit: cover;
     height: 200px;
+    border-radius:7px;
   }
     width: 100%;
 }
