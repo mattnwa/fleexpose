@@ -1,0 +1,1605 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://127.0.0.1:60230/__identify__
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+    body:
+      encoding: UTF-8
+      string: '70098830847420'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:36 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--headless"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--headless"]}}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '340'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '901'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"70.0.3538.16
+        (16ed95b41bb05e565b11fb66ac33c660b721f778)","userDataDir":"/var/folders/1c/8sd7dqjx7dg_4_vlhd5hw66w0000gn/T/.com.google.Chrome.bqjawF"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:60238"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac
+        OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"http://127.0.0.1:60230/vehicles"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '41'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":null}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":"#search-form"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '47'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-1"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-1/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-1/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"./descendant::*[self::input | self::textarea][not(((((((./@type
+        = ''submit'') or (./@type = ''image'')) or (./@type = ''radio'')) or (./@type
+        = ''checkbox'')) or (./@type = ''hidden'')) or (./@type = ''file'')))][((((./@id
+        = ''vin'') or (./@name = ''vin'')) or (./@placeholder = ''vin'')) or (./@id
+        = //label[(normalize-space(string(.)) = ''vin'')]/@for))] | .//label[(normalize-space(string(.))
+        = ''vin'')]//./descendant::*[self::input | self::textarea][not(((((((./@type
+        = ''submit'') or (./@type = ''image'')) or (./@type = ''radio'')) or (./@type
+        = ''checkbox'')) or (./@type = ''hidden'')) or (./@type = ''file'')))]"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '615'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-2"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-2/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-2/enabled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-2/name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"input"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-2/attribute/readonly
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":null}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-2/name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"input"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-2/attribute/type
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '74'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"text"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/execute
+    body:
+      encoding: UTF-8
+      string: '{"script":"arguments[0].value = ''''","args":[{"ELEMENT":"0.7671314377090799-2"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '80'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":null}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-2/value
+    body:
+      encoding: UTF-8
+      string: '{"value":["333"]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '17'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":null}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-1/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":".//input[((((./@type = ''submit'') or (./@type
+        = ''reset'')) or (./@type = ''image'')) or (./@type = ''button''))][(((./@id
+        = ''Search'') or (./@value = ''Search'')) or (./@title = ''Search''))] | .//input[(./@type
+        = ''image'')][(./@alt = ''Search'')] | .//button[(((((./@id = ''Search'')
+        or (./@value = ''Search'')) or (./@title = ''Search'')) or (normalize-space(string(.))
+        = ''Search'')) or .//img[(./@alt = ''Search'')])] | .//input[(./@type = ''image'')][(./@alt
+        = ''Search'')]"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '478'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-3"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-3/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-3/enabled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-3/name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"input"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-3/click
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '2'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":null}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:37 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '128'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"FLEETIO
+        VIN TOOL\nCurrent Fleet\nMake Model Year VIN Color"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/execute
+    body:
+      encoding: UTF-8
+      string: '{"script":"return arguments[0].textContent","args":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '88'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '209'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"\nFleexpose\n\n\n\n\n\n\n\nFLEETIO
+        VIN TOOL\n\n\n\n\n\n\n\n\nCurrent Fleet\n\n\n\n\nMake\nModel\nYear\nVIN\nColor\n\n\n\n\n\n\n\n\n\n\n\n\n"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '128'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"FLEETIO
+        VIN TOOL\nCurrent Fleet\nMake Model Year VIN Color"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/execute
+    body:
+      encoding: UTF-8
+      string: '{"script":"return arguments[0].textContent","args":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '88'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '209'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"\nFleexpose\n\n\n\n\n\n\n\nFLEETIO
+        VIN TOOL\n\n\n\n\n\n\n\n\nCurrent Fleet\n\n\n\n\nMake\nModel\nYear\nVIN\nColor\n\n\n\n\n\n\n\n\n\n\n\n\n"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '128'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"FLEETIO
+        VIN TOOL\nCurrent Fleet\nMake Model Year VIN Color"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/execute
+    body:
+      encoding: UTF-8
+      string: '{"script":"return arguments[0].textContent","args":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '88'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '209'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"\nFleexpose\n\n\n\n\n\n\n\nFLEETIO
+        VIN TOOL\n\n\n\n\n\n\n\n\nCurrent Fleet\n\n\n\n\nMake\nModel\nYear\nVIN\nColor\n\n\n\n\n\n\n\n\n\n\n\n\n"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '128'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"FLEETIO
+        VIN TOOL\nCurrent Fleet\nMake Model Year VIN Color"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/execute
+    body:
+      encoding: UTF-8
+      string: '{"script":"return arguments[0].textContent","args":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '88'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '209'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"\nFleexpose\n\n\n\n\n\n\n\nFLEETIO
+        VIN TOOL\n\n\n\n\n\n\n\n\nCurrent Fleet\n\n\n\n\nMake\nModel\nYear\nVIN\nColor\n\n\n\n\n\n\n\n\n\n\n\n\n"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: https://secure.fleetio.com/api/v1/vehicles?q%5Bvin_cont%5D=333
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.5.0 x86_64) ruby/2.5.1p57
+      Authorization:
+      - Fleetio API Key
+      Account-Token:
+      - Account Token
+      Host:
+      - secure.fleetio.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 23 Sep 2018 18:29:38 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Pagination-Limit:
+      - '100'
+      X-Pagination-Current-Page:
+      - '1'
+      X-Pagination-Total-Pages:
+      - '1'
+      X-Pagination-Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"838df7143f38c7b486ff84fb2c60073e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0c721854-150f-4c52-aa64-cc94b26ed32e
+      X-Runtime:
+      - '0.144086'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":104481,"current_meter_value":6150.0,"fuel_type_id":null,"fuel_type_name":null,"fuel_volume_units":"us_gallons","group_id":24374,"group_name":"Jacksonville","meter_unit":"mi","name":"2015
+        Mercedes G500","ownership":"Owned","secondary_meter":true,"secondary_meter_unit":"hr","secondary_meter_value":30.0,"system_of_measurement":"imperial","vehicle_status_id":3261,"vehicle_status_name":"Active","vehicle_status_color":"green","vehicle_type_id":162276,"vehicle_type_name":"SUV","fuel_entries_count":15,"service_entries_count":6,"service_reminders_count":6,"vehicle_renewal_reminders_count":2,"comments_count":2,"documents_count":3,"images_count":3,"current_location_entry_id":1002269,"color":"White","license_plate":"529383U9","loan_account_number":null,"make":"Mercedes","model":"G500","registration_expiration_month":0,"registration_state":"AL","trim":"LEX","vin":"1A55333589789789","year":2015,"loan_ended_at":null,"loan_interest_rate":null,"loan_notes":null,"loan_started_at":null,"loan_vendor_id":null,"loan_vendor_name":null,"loan_amount":null,"loan_payment":null,"residual_value":null,"custom_fields":{},"inspection_schedules_count":0,"issues_count":6,"work_orders_count":9,"type_name":"SUV","meter_name":"Odometer","secondary_meter_name":"Secondary
+        Meter","default_image_url":null,"default_image_url_medium":null,"default_image_url_small":null,"default_image_url_large":null,"driver":{},"specs":{"body_type":"","body_subtype":"","drive_type":"","brake_system":"","msrp_cents":null,"fuel_tank_capacity":null,"fuel_tank_2_capacity":null,"front_track_width":null,"ground_clearance":null,"height":null,"length":null,"rear_track_width":null,"width":null,"wheelbase":null,"front_tire_psi":null,"rear_tire_psi":null,"base_towing_capacity":null,"curb_weight":null,"gross_vehicle_weight_rating":null,"bed_length":null,"max_payload":null,"rear_axle_type":"","front_tire_type":"","front_wheel_diameter":"","rear_tire_type":"","rear_wheel_diameter":"","epa_city":null,"epa_highway":null,"epa_combined":null,"engine_description":"","engine_brand":"","engine_aspiration":"","engine_block_type":"","engine_bore":null,"engine_cam_type":"","engine_compression":null,"engine_cylinders":null,"engine_displacement":null,"fuel_induction":"","fuel_quality":"","max_hp":null,"max_torque":null,"oil_capacity":null,"redline_rpm":"","engine_stroke":null,"engine_valves":null,"transmission_description":"","transmission_brand":"","transmission_type":"","transmission_gears":null,"cargo_volume":null,"interior_volume":null,"passenger_volume":"","engine_bore_with_units":null,"wheelbase_with_units":null,"msrp":null},"permissions":{},"manage_vehicle":false,"created_at":"2015-05-28T11:55:08.832-05:00","updated_at":"2018-09-20T07:48:07.016-05:00"}]'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":"/html"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Content-Length:
+      - '33'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":[{"ELEMENT":"0.7671314377090799-4"}]}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":true}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/bb58fa95065b7d5d156bca0d8020ec8c/element/0.7671314377090799-4/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.14.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '214'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"bb58fa95065b7d5d156bca0d8020ec8c","status":0,"value":"FLEETIO
+        VIN TOOL\nCurrent Fleet\nMake Model Year VIN Color\n1 vehicle found\n2015
+        Mercedes G500\nVIN: 1A55333589789789\nODO: 6,150 mi\nYear 2015"}'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:38 GMT
+recorded_with: VCR 4.0.0

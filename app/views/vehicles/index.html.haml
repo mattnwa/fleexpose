@@ -1,6 +1,6 @@
 .container-fluid
   %h1.text-center FLEETIO VIN TOOL
-  = form_tag search_vehicles_path, method: :get, remote: true, class: 'form-inline justify-content-center mb-2' do
+  = form_tag search_vehicles_path, method: :get, remote: true, id: 'search-form', class: 'form-inline justify-content-center mb-2' do
     .form-group
       = text_field_tag :vin, '', placeholder: 'Enter part of VIN', class: 'form-control input-lg mr-sm-2'
       = submit_tag "Search", class: 'btn btn-primary', data: { disable_with: 'Finding Matches'}
