@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://secure.fleetio.com/api/v1/vehicles?q%5Bvin_cont%5D=0000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.5.0 x86_64) ruby/2.5.1p57
+      Authorization:
+      - Fleetio API Key
+      Account-Token:
+      - Account Token
+      Host:
+      - secure.fleetio.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 23 Sep 2018 18:29:08 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Pagination-Limit:
+      - '100'
+      X-Pagination-Current-Page:
+      - '1'
+      X-Pagination-Total-Pages:
+      - '0'
+      X-Pagination-Total-Count:
+      - '0'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4f53cda18c2baa0c0354bb5f9a3ecbe5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b99174dc-312d-40db-8ce8-1390c55868ba
+      X-Runtime:
+      - '0.118326'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:08 GMT
+recorded_with: VCR 4.0.0

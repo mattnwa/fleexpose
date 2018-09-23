@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://secure.fleetio.com/api/v1/vehicles?q%5Bvin_cont%5D=1GBJG31R611156980
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.5.0 x86_64) ruby/2.5.1p57
+      Authorization:
+      - Fleetio API Key
+      Account-Token:
+      - Account Token
+      Host:
+      - secure.fleetio.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 23 Sep 2018 18:29:07 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Pagination-Limit:
+      - '100'
+      X-Pagination-Current-Page:
+      - '1'
+      X-Pagination-Total-Pages:
+      - '1'
+      X-Pagination-Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1019122c9de3aebd415afa35e0ecf16b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4a6696a5-474d-4e63-a088-4c80d89057b8
+      X-Runtime:
+      - '0.214302'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":28848,"current_meter_value":2121530.0,"fuel_type_id":null,"fuel_type_name":null,"fuel_volume_units":"us_gallons","group_id":23965,"group_name":"Alabama","meter_unit":"mi","name":"2001
+        Chevy G Series 1500","ownership":"Owned","secondary_meter":true,"secondary_meter_unit":"hr","secondary_meter_value":6701.0,"system_of_measurement":"imperial","vehicle_status_id":3263,"vehicle_status_name":"In
+        Shop","vehicle_status_color":"orange","vehicle_type_id":153,"vehicle_type_name":"Truck","fuel_entries_count":53,"service_entries_count":16,"service_reminders_count":3,"vehicle_renewal_reminders_count":2,"comments_count":4,"documents_count":2,"images_count":2,"current_location_entry_id":8389813,"color":"Green","license_plate":"58X15490","loan_account_number":null,"make":"Chevrolet","model":"G-Series
+        1500","registration_expiration_month":0,"registration_state":null,"trim":"Koy","vin":"1GBJG31R611156980","year":2001,"loan_ended_at":null,"loan_interest_rate":null,"loan_notes":null,"loan_started_at":null,"loan_vendor_id":null,"loan_vendor_name":null,"loan_amount":null,"loan_payment":null,"residual_value":null,"custom_fields":{},"inspection_schedules_count":0,"issues_count":11,"work_orders_count":4,"type_name":"Truck","meter_name":"Odometer","secondary_meter_name":"Secondary
+        Meter","default_image_url":"https://d3mgxxlx76tp6w.cloudfront.net/api/file/rgaLfSDRguojPXU8Wl3w","default_image_url_medium":"https://d3mgxxlx76tp6w.cloudfront.net/api/file/rgaLfSDRguojPXU8Wl3w/convert?cache=true\u0026fit=crop\u0026h=100\u0026policy=eyJleHBpcnkiOjQ1MzQ5NDkzNDMsImNhbGwiOlsicmVhZCIsImNvbnZlcnQiXSwiaGFuZGxlIjoicmdhTGZTRFJndW9qUFhVOFdsM3cifQ%3D%3D\u0026rotate=exif\u0026signature=2aa44648bd4dbc9ef4277f92836c7037a7c62c61b7e691ec08f09bd4b29bdec4\u0026w=100","default_image_url_small":"https://d3mgxxlx76tp6w.cloudfront.net/api/file/rgaLfSDRguojPXU8Wl3w/convert?cache=true\u0026fit=crop\u0026h=45\u0026policy=eyJleHBpcnkiOjQ1MzQ5NDkzNDMsImNhbGwiOlsicmVhZCIsImNvbnZlcnQiXSwiaGFuZGxlIjoicmdhTGZTRFJndW9qUFhVOFdsM3cifQ%3D%3D\u0026rotate=exif\u0026signature=2aa44648bd4dbc9ef4277f92836c7037a7c62c61b7e691ec08f09bd4b29bdec4\u0026w=45","default_image_url_large":"https://d3mgxxlx76tp6w.cloudfront.net/api/file/rgaLfSDRguojPXU8Wl3w/convert?cache=true\u0026fit=scale\u0026policy=eyJleHBpcnkiOjQ1MzQ5NDkzNDMsImNhbGwiOlsicmVhZCIsImNvbnZlcnQiXSwiaGFuZGxlIjoicmdhTGZTRFJndW9qUFhVOFdsM3cifQ%3D%3D\u0026rotate=exif\u0026signature=2aa44648bd4dbc9ef4277f92836c7037a7c62c61b7e691ec08f09bd4b29bdec4\u0026w=450","driver":{"id":297,"first_name":"Adam","last_name":"Price","full_name":"Adam
+        Price","default_image_url":"https://d3mgxxlx76tp6w.cloudfront.net/api/file/pc3SG7XwTN2sb4kFDzD6"},"specs":{"body_type":null,"body_subtype":null,"drive_type":null,"brake_system":null,"msrp_cents":null,"fuel_tank_capacity":null,"fuel_tank_2_capacity":null,"front_track_width":null,"ground_clearance":null,"height":null,"length":null,"rear_track_width":null,"width":null,"wheelbase":null,"front_tire_psi":null,"rear_tire_psi":null,"base_towing_capacity":null,"curb_weight":null,"gross_vehicle_weight_rating":null,"bed_length":null,"max_payload":null,"rear_axle_type":null,"front_tire_type":null,"front_wheel_diameter":null,"rear_tire_type":null,"rear_wheel_diameter":null,"epa_city":null,"epa_highway":null,"epa_combined":null,"engine_description":null,"engine_brand":null,"engine_aspiration":null,"engine_block_type":null,"engine_bore":null,"engine_cam_type":null,"engine_compression":null,"engine_cylinders":null,"engine_displacement":null,"fuel_induction":null,"fuel_quality":null,"max_hp":null,"max_torque":null,"oil_capacity":null,"redline_rpm":null,"engine_stroke":null,"engine_valves":null,"transmission_description":null,"transmission_brand":null,"transmission_type":null,"transmission_gears":null,"cargo_volume":null,"interior_volume":null,"passenger_volume":null,"engine_bore_with_units":null,"wheelbase_with_units":null,"msrp":null},"permissions":{},"manage_vehicle":false,"created_at":"2013-01-25T09:43:07.570-06:00","updated_at":"2018-09-21T09:03:52.678-05:00"}]'
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 18:29:07 GMT
+recorded_with: VCR 4.0.0
